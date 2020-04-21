@@ -20,10 +20,8 @@ module.exports = {
     {
       test: /\.js$/,
       exclude: /node_modules/,
-      loader: 'eslint-loader',
-      options: {
-        // eslint options (if necessary)
-      },
+      loader: 'babel-loader',
+      options: ['@babel/preset-env'],
     }],
   },
   devServer: {
